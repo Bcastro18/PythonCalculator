@@ -1,5 +1,4 @@
-#calculator to pratice
-#Bruno
+#Main
 
 def Add (count, count2):
     result = str(count + count2)
