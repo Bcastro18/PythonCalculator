@@ -1,5 +1,5 @@
 #calculator to pratice
-#Bruno - 03/01/2023
+#Bruno
 
 def Add (count, count2):
     result = str(count + count2)
