@@ -1,40 +1,58 @@
 #Main
 
-def Add (count, count2):
+def Add ():
+    count = GetValue1()
+    count2 =  GetValue1()
     result = str(count + count2)
     print ("Soma:" + result)
+    operationsRecurs()
     
-
-def Sub (count, count2):
+def Sub ():
+    count = GetValue1()
+    count2 =  GetValue1()
     result = str(count - count2)
     print ("Subtração:" + result)
+    operationsRecurs()
 
-def Div (count, count2):
+def Div ():
+    count = GetValue1()
+    count2 =  GetValue1()
     result = str(count / count2)
     print ("Divisão:" + result)
+    operationsRecurs()
 
-def Mult (count, count2):
+def Mult ():
+    count = GetValue1()
+    count2 =  GetValue1()
     result = str(count * count2)
     print ("Multiplicação:" +  result)
+    operationsRecurs()
+
+def GetValue1():
+    valor = float(input("Please, insert a number: "))
+    return valor
 
 
-valor = float(input("Please, insert a number:"))
+def operationsRecurs():
+    oper = int(input("Choose an operation: "))
+    if oper == 1:
+        Add()
+    elif oper == 2:
+        Sub()
+    elif oper == 3:
+        Mult()
+    elif oper == 4:
+        Div()
+    else:
+        print ("Insira uma opção valida! ")
+        operationsRecurs()
 
-valor2 = float(input("Please, insert a second number:"))
 
-oper = int(input("qual operação fará?"))
 
-if oper == 1:
-    Add(valor, valor2)
-elif oper == 2:
-    Sub(valor, valor2)
-elif oper == 3:
-    Mult(valor, valor2)
-elif oper == 4:
-    Div(valor, valor2)
-else:
-    print ("Insira uma opção valida")
 
+
+
+operationsRecurs()
 
 
 
